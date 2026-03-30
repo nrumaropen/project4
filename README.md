@@ -44,7 +44,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='./project5_walkthru' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./project5_walkthru.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with sScreenToGIF
 

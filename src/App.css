@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: whitesmoke;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 260px 1fr 260px;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+}
+
+/* ===== SIDEBARS ===== */
+.sidebar {
+  background: rgba(189, 203, 210, 0.85);
+  padding: 20px;
+  overflow-y: auto;
+  font-weight: bolder;
+}
+
+/* ===== HISTORY ITEMS ===== */
+.historyItem {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.historyThumb {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.videoThumb {
+  font-size: 20px;
+}
+
+.historyText {
+  flex: 1;
+}
+
+.historyTitle {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.historyDate {
+  font-size: 12px;
+  color: #666;
+}
+
+/* ===== MAIN CENTER ===== */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+/* ===== HEADER ===== */
+.headerSub {
+  font-size: 12px;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
+
+.headerTitle {
+  font-size: 40px;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.headerTagline {
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: rgba(104, 110, 118, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 100%;
+  backdrop-filter: blur(8px);
+  margin-bottom: 20px;
+}
+
+.cardTitle {
+  margin-bottom: 10px;
+}
+
+/* ===== TAGS ===== */
+.tagsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.tag {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: none;
+  background: #113965;
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.tag:hover {
+  background: #7c7c7c;
+}
+
+.tagBanned {
+  background: red;
+  color: whitesmoke;
+}
+
+/* ===== MEDIA ===== */
+.mediaWrapper {
+  margin: 15px 0;
+}
+
+.mediaImg,
+.mediaVideo {
+  width: 100%;
+  max-height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: none;
+}
+
+/* ===== TEXT ===== */
+.explanation {
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* ===== BUTTON ===== */
+.discoverBtn {
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: none;
+  background: #113965;
+  color: whitesmoke;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.discoverBtn:hover {
+  background: #333;
+}
+
+.discoverBtnDisabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ===== BAN LIST ===== */
+.banChip {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background: #ff4d4d;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== ERROR ===== */
+.errorBox {
+  background: #ff4d4d;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .app-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .headerTitle {
+    font-size: 28px;
+  }
+}
